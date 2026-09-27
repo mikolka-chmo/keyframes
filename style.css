@@ -1,0 +1,31 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition: transform 0.3s ease;
+  transform: translateY(300px) ;
+position: relative;
+animation: box 4s infinite linear;
+}
+@keyframes box {
+  0% {
+    transform: translate(0, 0);
+    background-color: black;      
+  }
+  25% {
+    transform: translate(0, 300px);   
+    background-color: darkmagenta;
+  }
+  50% {
+    transform: translate(300px, 300px);
+    background-color: seagreen;
+  }
+  75% {
+    transform: translate(300px, 0);   
+    background-color: hotpink;
+  }
+  100% {
+    transform: translate(0, 0);  
+    background-color: black;    
+  }
+}
